@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function RegisterForm() {
@@ -12,6 +12,18 @@ export default function RegisterForm() {
   const [error, setError] = useState("");
 
   const router = useRouter();
+
+  // Helper function to capitalize the first letter of each word
+  const capitalizeWords = (input) => {
+    return input.replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
+  // useEffect to capitalize the name when it changes
+  useEffect(() => {
+    if (name) {
+      setName(capitalizeWords(name));
+    }
+  }, [name]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,23 +74,27 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="flex justify-center items-start h-screen px-4 mt-10"> {/* Adjust margin and vertical alignment */}
-      <div className="shadow-lg p-5 rounded-lg border-t-4 border-green-400  bg-white w-full max-w-md">
+    <div className="flex justify-center items-start h-screen px-4 mt-10">
+      {/* Adjust margin and vertical alignment */}
+      <div className="shadow-lg p-5 rounded-lg border-t-4 border-green-400 bg-white w-full max-w-md">
         <h1 className="text-xl font-bold my-4">Register</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
             onChange={(e) => setName(e.target.value)}
+            value={name}  
             type="text"
             placeholder="Full Name"
           />
           <input
-            onChange={(e) => setEmail(e.target.value)}
-            type="text"
+            onChange={(e) => setEmail(e.target.value)} 
+            value={email}  
+            type="email"
             placeholder="Email"
           />
           <input
             onChange={(e) => setPassword(e.target.value)}
+            value={password}  
             type="password"
             placeholder="Password"
           />
