@@ -125,14 +125,14 @@ export default function HomePage() {
             >
               Log Out
             </button>*/}
-            <Link href="/dashboard" className="bg-red-600 p-2 rounded-md text-white" >Go to Log Out</Link>
+            <Link href="/dashboard" className="bg-red-600 p-2 rounded-md text-white font-serif " >Go to Log Out</Link>
             <div className="grid-cols-1">
                 {/*<p className="self-center mt-5">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>*/}
                 {/*<p className="self-center mb-5">Email: <span className="font-extralight">{session?.user?.email}</span></p>*/}
             </div>
-            <h1 className="font-bold text-3xl mb-1 mt-4">To Do List</h1>
+            <h1 className="font-bold text-3xl mb-1 mt-4 text-slate-600 font-serif">To Do List</h1>
             
-            <p className="ml-3 font-bold text-sm mt-3">Action</p>
+            <p className="ml-3 font-bold text-sm mt-3 text-slate-600 font-serif">Action</p>
 
             {/* Added capitalization of first letter of each word */}
             <form className="flex flex-col ml-3" onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
@@ -143,11 +143,11 @@ export default function HomePage() {
                     onChange={(e) => setName(capitalizeWords(e.target.value))}  
                     className={styles.inputField}
                 />
-                <button className="bg-black text-white rounded-md w-fit" type="submit" style={{ padding: "6px 10px" }}>Submit</button>
+                <button className="bg-black text-white rounded-md w-fit font-serif" type="submit" style={{ padding: "6px 10px" }}>Submit</button>
             </form>
 
-            <h2 className="text-base mt-6 mb-3 font-bold ml-3">To-Do List 
-                <span className="text-base ml-3 font-normal">{loading ? "(Loading...)" : `(${users.length} ${users.length === 1 ? 'Action' : 'Actions'})`}</span>
+            <h2 className="text-base mt-6 mb-3 font-bold ml-3 text-slate-600 font-serif">To-Do List 
+                <span className="text-base ml-3 font-normal ">{loading ? "(Loading...)" : `(${users.length} ${users.length === 1 ? 'Action' : 'Actions'})`}</span>
             </h2>
             <ul className="ml-3" style={{ listStyle: "none", padding: 0 }}>
                 {users.map((user) => (
@@ -171,7 +171,7 @@ export default function HomePage() {
                         ) : (
                             <>
                             <div className="flex items-center justify-between">
-                                <span className="text-sm" style={{ marginRight: "20px" }}>{user.name}</span>
+                                <span className="text-sm text-slate-600 font-serif" style={{ marginRight: "20px" }}>{user.name}</span>
                                 <div className="flex items-center justify-end">
                                     <button className="text-black rounded-md mr-5" onClick={() => handleEdit(user)} style={{ padding: "2px 2px" }}>
                                         ✏️

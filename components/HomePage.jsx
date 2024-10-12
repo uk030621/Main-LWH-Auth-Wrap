@@ -18,8 +18,8 @@ export default function HomePage() {
       <div className="shadow-lg p-8 bg-zinc-300/10 flex flex-col gap-2 my-6 w-full h-full">
       <h1 className="text-3xl text-slate-600 font-bold font-serif">Welcome Page</h1>
       <div className="grid-cols-1">
-          <p className="self-center">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>
-          <p className="self-center">Email: <span className="font-extralight">{session?.user?.email}</span></p>
+          <p className="self-center text-slate-600 font-serif">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>
+          <p className="self-center text-slate-600 font-serif">Email: <span className="font-extralight">{session?.user?.email}</span></p>
         </div>
         {/* Move button to a flex container for alignment */}
         <div className="flex flex-start mb-3 w-fit mt-5"> 
