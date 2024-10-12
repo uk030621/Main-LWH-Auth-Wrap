@@ -13,7 +13,7 @@ export async function POST(req) {
 
     try {
         const client = await clientPromise;
-        const db = client.db("Register"); // Replace with your DB name
+        const db = client.db("ToDoApp"); // Replace with your DB name
         const collection = db.collection("users");
 
         const result = await collection.insertOne({ name });
@@ -28,7 +28,7 @@ export async function POST(req) {
 export async function GET() {
     try {
         const client = await clientPromise;
-        const db = client.db("Register"); // Replace with your DB name
+        const db = client.db("ToDoApp"); // Replace with your DB name
         const collection = db.collection("users");
 
         const users = await collection.find({}).toArray();
@@ -53,7 +53,7 @@ export async function PATCH(req) {
         }
 
         const client = await clientPromise;
-        const db = client.db("Register"); // Replace with your DB name
+        const db = client.db("ToDoApp"); // Replace with your DB name
         const collection = db.collection("users");
 
         const result = await collection.updateOne(
