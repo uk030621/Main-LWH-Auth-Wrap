@@ -1,0 +1,28 @@
+/* MyForm.module.css */
+.inputField {
+    margin-top: 4px;
+    margin-bottom: 10px; 
+    padding: 3px 10px;
+    width: 60%;
+    /*border: solid 1px grey;*/
+    border: 2px solid; /* Set a thicker border to visualize the effect */
+    border-image: linear-gradient(90deg, black 20%, orange 20%, orange 40%, black 40%, black 60%, orange 60%, orange 80%, black 80%) 1;
+    /*border-radius: 7px;*/
+}
+
+.border {
+    border: 2px solid; /* Set a thicker border to visualize the effect */
+    border-image: linear-gradient(90deg, black 20%, orange 20%, orange 40%, black 40%, black 60%, orange 60%, orange 80%, black 80%) 1;
+}
+
+.inputField::placeholder {
+    color: rgb(99, 98, 98); /* Change to your preferred color */
+    opacity: 1;
+    text-transform: capitalize;
+}
+
+.nameList{
+    padding: 6px;
+    width: 150px;
+    margin-right: 10px;
+}
