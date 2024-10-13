@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import styles from './calculator.module.css';
 import Link from 'next/link';
 
+
+  
 const Calculator = () => {
   const [input, setInput] = useState('');
 
@@ -25,6 +27,8 @@ const Calculator = () => {
   };
 
   return (
+
+    
     
     <div className={styles.calculatorContainer}>
         

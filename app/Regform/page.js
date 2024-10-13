@@ -128,7 +128,7 @@ export default function HomePage() {
             <Link href="/dashboard" className={styles.gotologout} >Go to Log Out</Link>
             <div className="mt-4">
             <Link href="/calculator" className={styles.gotoStock} >🧮</Link>
-            <Link href="/dashboard" className={styles.gotoMedia} >Media</Link>
+            <Link href="/alltoowell" className={styles.gotoMedia} >Media</Link>
             </div>
 
             <div className="grid-cols-1">
