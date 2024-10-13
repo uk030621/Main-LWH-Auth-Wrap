@@ -118,7 +118,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "10px", marginTop: "20px", borderRadius: "5px" }}>
+        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "10px", marginTop: "20px", }}>
             {/*<button
               onClick={() => signOut()}
               className="bg-red-500 text-white text-sm py-2 px-4 rounded-md"
