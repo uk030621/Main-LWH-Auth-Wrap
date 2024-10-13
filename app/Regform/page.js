@@ -118,7 +118,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "10px", marginTop: "20px", }}>
+        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "10px", marginTop: "20px", backgroundColor:"AliceBlue" }}>
             {/*<button
               onClick={() => signOut()}
               className="bg-red-500 text-white text-sm py-2 px-4 rounded-md"
@@ -126,11 +126,16 @@ export default function HomePage() {
               Log Out
             </button>*/}
             <Link href="/dashboard" className={styles.gotologout} >Go to Log Out</Link>
+            <div className="mt-4">
+            <Link href="/calculator" className={styles.gotoStock} >📅</Link>
+            <Link href="/dashboard" className={styles.gotoMedia} >Media</Link>
+            </div>
+
             <div className="grid-cols-1">
                 {/*<p className="self-center mt-5">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>*/}
                 {/*<p className="self-center mb-5">Email: <span className="font-extralight">{session?.user?.email}</span></p>*/}
             </div>
-            <h1 className="font-bold text-3xl mb-1 mt-4 text-slate-600 font-serif">To Do List</h1>
+            <h1 className="font-bold text-3xl mb-1 mt-4 ml-3 text-slate-600 font-serif">To Do List</h1>
             
             <p className="ml-3 font-bold text-sm mt-3 text-slate-600 font-serif">Action</p>
 

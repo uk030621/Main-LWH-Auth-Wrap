@@ -37,6 +37,7 @@
     padding: 10px;
     border-radius: 6px;
     box-shadow: 5px 4px #d3d2d2;
+    margin-left: 10px;
 }
 
 .submitbtn{
@@ -45,6 +46,30 @@
     font-family: serif;
     padding: 5px 10px;
     border-radius: 6px;
-    box-shadow: 5px 4px #d3d2d2;
+    
     width: fit-content;
+}
+
+.gotoStock{
+  font-size:large;
+  
+  background-color: whitesmoke;
+  padding: 4px 4px;
+  border-radius: 5px;
+  border: solid 1px black;
+  box-shadow: 5px 4px #d3d2d2;
+  margin-left: 10px;
+  
+}
+
+.gotoMedia{
+   margin-left: 20px; 
+   font-size: small;
+   text-decoration-line: underline;
+   text-underline-offset: 3px;
+   background-color: whitesmoke;
+   padding: 4px 4px;
+   border-radius: 5px;
+   border: solid 1px black;
+   box-shadow: 5px 4px #d3d2d2;
 }

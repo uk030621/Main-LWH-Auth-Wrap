@@ -36,7 +36,7 @@ export default function LoginForm() {
 
   return (
     <div className="flex justify-center items-start h-screen px-4 mt-10"> {/* Adjust margin and vertical alignment */}
-      <div className="shadow-lg p-5 rounded-lg border-t-4 border-green-400 bg-white w-full max-w-md">
+      <div className="shadow-lg p-5 rounded-lg border-t-4 border-grey-700 bg-white w-full max-w-md">
         <h1 className="text-xl font-bold my-4">Login</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -52,7 +52,7 @@ export default function LoginForm() {
             placeholder="Password"
             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
           />
-          <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2 rounded-md hover:bg-green-700 transition-all">
+          <button className="bg-black text-white font-bold cursor-pointer px-6 py-2 rounded-md hover:bg-green-700 transition-all">
             Login
           </button>
           {error && (
