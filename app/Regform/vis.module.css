@@ -15,6 +15,7 @@
 .border {
     border: 2px solid; /* Set a thicker border to visualize the effect */
     /*border-image: linear-gradient(90deg, black 20%, orange 20%, orange 40%, black 40%, black 60%, orange 60%, orange 80%, black 80%) 1;*/
+    box-shadow: 7px 6px rgb(200, 241, 200);
 }
 
 .inputField::placeholder {
@@ -27,4 +28,23 @@
     padding: 6px;
     width: 150px;
     margin-right: 10px;
+}
+
+.gotologout{
+    background-color: red;
+    color: white;
+    font-family: serif;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 5px 4px #d3d2d2;
+}
+
+.submitbtn{
+    background-color: black;
+    color: white;
+    font-family: serif;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 5px 4px rgb(200, 241, 200);
+    width: fit-content;
 }

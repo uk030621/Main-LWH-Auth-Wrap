@@ -125,7 +125,7 @@ export default function HomePage() {
             >
               Log Out
             </button>*/}
-            <Link href="/dashboard" className="bg-red-600 p-2 rounded-md text-white font-serif " >Go to Log Out</Link>
+            <Link href="/dashboard" className={styles.gotologout} >Go to Log Out</Link>
             <div className="grid-cols-1">
                 {/*<p className="self-center mt-5">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>*/}
                 {/*<p className="self-center mb-5">Email: <span className="font-extralight">{session?.user?.email}</span></p>*/}
@@ -138,12 +138,12 @@ export default function HomePage() {
             <form className="flex flex-col ml-3" onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
                 <input
                     type="text"
-                    placeholder="Enter your Action"
+                    placeholder="Enter your To Do..."
                     value={name}
                     onChange={(e) => setName(capitalizeWords(e.target.value))}  
                     className={styles.inputField}
                 />
-                <button className="bg-black text-white rounded-md w-fit font-serif" type="submit" style={{ padding: "6px 10px" }}>Submit</button>
+                <button className={styles.submitbtn} type="submit">Submit</button>
             </form>
 
             <h2 className="text-base mt-6 mb-3 font-bold ml-3 text-slate-600 font-serif">To-Do List 
