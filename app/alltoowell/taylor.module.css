@@ -1,3 +1,4 @@
+/* Main container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -7,13 +8,58 @@
     background-color: #f5f5f5;
   }
   
+  /* Video container styling */
   .videoContainer {
     margin-bottom: 20px;
     width: 100%;
     max-width: 600px;
   }
   
-  .videoPlayer {
+  .videoContainer iframe {
     width: 100%;
+    height: auto;
     border-radius: 8px;
+    border: none;
   }
+  
+  /* Calculator container styling */
+  .calculatorContainer {
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add responsiveness for mobile devices */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .videoContainer {
+      max-width: 100%;
+    }
+  
+    .calculatorContainer {
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  /* Add responsiveness for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .videoContainer {
+      max-width: 100%;
+    }
+  
+    .calculatorContainer {
+      max-width: 400px;
+    }
+  }
+  
