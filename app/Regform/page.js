@@ -127,7 +127,7 @@ export default function HomePage() {
             </button>*/}
             <Link href="/dashboard" className={styles.gotologout} >Go to Log Out</Link>
             <div className="mt-4">
-            <Link href="/calculator" className={styles.gotoStock} >📅</Link>
+            <Link href="/calculator" className={styles.gotoStock} >🧮</Link>
             <Link href="/dashboard" className={styles.gotoMedia} >Media</Link>
             </div>
 

@@ -29,7 +29,7 @@ const Calculator = () => {
     <div className={styles.calculatorContainer}>
         
       <div className={styles.calculator}>
-      <Link className="ml-2 mb-5" href="/Regform">Back</Link>
+      <Link className="ml-2 mb-5 font-serif" href="/Regform">Back</Link>
         <div className={styles.display}>
           <input type="text" value={input} readOnly />
         </div>
