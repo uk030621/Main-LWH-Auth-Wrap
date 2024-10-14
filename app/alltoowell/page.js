@@ -18,13 +18,17 @@ const CalculatorWithVideo = () => {
     
     <div className={styles.container}>
       <div className={styles.videoContainer}>
-      <Link className="p-2 mt-10" href="/Regform">Back</Link>
+      <Link className="rounded-md px-2 py-1  mb-5 font-serif text-base bg-slate-700 opacity-60 text-white" href="/Regform">⬅️ Return to Main Page</Link>
+      <h1 className='mt-5 mb-2 font-serif'>All To Well by Taylor Swift</h1>
       <YouTube videoId="sRxrwjOtIag" opts={videoOptions} />
-      
+      <h1 className='mt-5 mb-2 font-serif'>THE MAN by Taylor Swift</h1>
       <YouTube videoId="tbEekLA7J3Y" opts={videoOptions} />
+      <h1 className='mt-5 mb-2 font-serif'>You are on your own kid by Taylor Swift</h1>
+      <YouTube videoId="7Gbg6Z70J7E" opts={videoOptions} />
 
       </div>
       <div className={styles.calculatorContainer}>
+        <h1 className='font-thin font-serif text-4xl'>NO ADVERTS!!!</h1>
         {/* Your calculator component */}
       </div>
     </div>
