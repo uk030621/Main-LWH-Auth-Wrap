@@ -44,8 +44,8 @@ const CalculatorWithVideo = () => {
 
                 <h1 className='mt-5 mb-2 font-serif'>The Very Best OF Ian Hislop - HIGNFY</h1>
                 {loading.video4 && <p>Loading...</p>}
-                <YouTube videoId="V0QTxnzxstU" opts={videoOptions} onReady={() => handleVideoReady('video3')} />
-                  
+                <YouTube videoId="V0QTxnzxstU" opts={videoOptions} onReady={() => handleVideoReady('video4')} />
+
             </div>
 
             <div className={styles.calculatorContainer}>
