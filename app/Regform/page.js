@@ -135,9 +135,9 @@ export default function HomePage() {
                 {/*<p className="self-center mt-5">Hello <span className="mr-8 ml-1/2 font-extralight">{firstName},</span></p>*/}
                 {/*<p className="self-center mb-5">Email: <span className="font-extralight">{session?.user?.email}</span></p>*/}
             </div>
-            <h1 className="font-bold text-3xl mb-1 mt-4 ml-3 text-slate-600 font-serif">To Do List</h1>
+            <h1 className="font-bold text-3xl mb-1 mt-7 ml-3 text-slate-600 font-serif">To Do List</h1>
             
-            <p className="ml-3 font-bold text-sm mt-3 text-slate-600 font-serif">Action</p>
+            <p className="ml-3 font-bold text-sm mt-1 text-slate-600 font-serif">Action</p>
 
             {/* Added capitalization of first letter of each word */}
             <form className="flex flex-col ml-3" onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
