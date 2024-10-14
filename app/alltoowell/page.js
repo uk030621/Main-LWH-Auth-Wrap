@@ -10,7 +10,7 @@ const CalculatorWithVideo = () => {
       height: '315',
       width: '560',
       playerVars: {
-        autoplay: 1, // Don't autoplay video
+        autoplay: 0, // Don't autoplay video
       },
     };
   
@@ -20,6 +20,9 @@ const CalculatorWithVideo = () => {
       <div className={styles.videoContainer}>
       <Link className="p-2 mt-10" href="/Regform">Back</Link>
       <YouTube videoId="sRxrwjOtIag" opts={videoOptions} />
+      
+      <YouTube videoId="tbEekLA7J3Y" opts={videoOptions} />
+
       </div>
       <div className={styles.calculatorContainer}>
         {/* Your calculator component */}
