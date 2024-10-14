@@ -12,11 +12,11 @@
     /*border-radius: 7px;*/
 }
 
-.border {
-    border: 2px solid; /* Set a thicker border to visualize the effect */
-    /*border-image: linear-gradient(90deg, black 20%, orange 20%, orange 40%, black 40%, black 60%, orange 60%, orange 80%, black 80%) 1;*/
+/*.border {
+    border: 2px solid; 
+    border-image: linear-gradient(90deg, black 20%, orange 20%, orange 40%, black 40%, black 60%, orange 60%, orange 80%, black 80%) 1;
     box-shadow: 7px 6px #d3d2d2;
-}
+}*/
 
 .inputField::placeholder {
     color: rgb(99, 98, 98); /* Change to your preferred color */
