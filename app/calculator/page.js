@@ -30,6 +30,18 @@ const Calculator = () => {
       setInput('Error');  // Handle any errors gracefully
     }
   };
+
+  const handlePercentage = () => {
+    try {
+      if (input !== '') {
+        const result = (eval(input) / 100).toString();  // Calculate percentage
+        setInput(result);
+      }
+    } catch (error) {
+      setInput('Error');  // Handle errors gracefully
+    }
+  };
+  
   
 
   return (
@@ -63,6 +75,8 @@ const Calculator = () => {
 
           <button onClick={() => handleClick('0')} className={styles.button}>0</button>
           <button onClick={() => handleClick('.')} className={styles.button}>.</button>
+          <button onClick={handlePercentage} className={styles.operatorButton}>%</button>
+
         </div>
       </div>
     </div>

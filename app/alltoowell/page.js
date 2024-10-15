@@ -49,7 +49,7 @@ const CalculatorWithVideo = () => {
             </div>
 
             <div className={styles.calculatorContainer}>
-                <h1 className='font-thin font-serif text-4xl'>NO ADVERTS!!!</h1>
+                <h1 className='font-thin font-serif text-4xl text-center'>NO ADVERTS!!!</h1>
                 {/* Your calculator component */}
             </div>
         </div>
