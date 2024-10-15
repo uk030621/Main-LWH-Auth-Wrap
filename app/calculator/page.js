@@ -18,11 +18,19 @@ const Calculator = () => {
 
   const handleEquals = () => {
     try {
-      setInput(eval(input).toString());  // Evaluate the expression (use eval with caution)
+      let result = eval(input);  // Evaluate the expression (use eval with caution)
+      
+      // Check if the result is a float (has a decimal point)
+      if (result % 1 !== 0) {
+        result = result.toFixed(3);  // Limit to 5 decimal places
+      }
+  
+      setInput(result.toString());  // Set the result as the new input
     } catch (error) {
       setInput('Error');  // Handle any errors gracefully
     }
   };
+  
 
   return (
     <div className={styles.calculatorContainer}>
@@ -33,20 +41,20 @@ const Calculator = () => {
         </div>
         
         <div className={styles.buttons}>
-          <button onClick={handleClear} className={styles.clearButton}>C</button>
-          <button onClick={handleBackspace} className={styles.button}>←</button>
-          <button onClick={() => handleClick('/')} className={styles.operatorButton}>/</button>
-          <button onClick={() => handleClick('*')} className={styles.operatorButton}>*</button>
+          <button onClick={() => handleClick('/')} className={styles.operatorButton}>÷</button>
+          <button onClick={() => handleClick('*')} className={styles.operatorButton}>×</button>
+          <button onClick={() => handleClick('-')} className={styles.operatorButton}>-</button>
+          <button onClick={() => handleClick('+')} className={styles.operatorButton}>+</button>
           
           <button onClick={() => handleClick('7')} className={styles.button}>7</button>
           <button onClick={() => handleClick('8')} className={styles.button}>8</button>
           <button onClick={() => handleClick('9')} className={styles.button}>9</button>
-          <button onClick={() => handleClick('-')} className={styles.operatorButton}>-</button>
+          <button onClick={handleClear} className={styles.clearButton}>C</button>
           
           <button onClick={() => handleClick('4')} className={styles.button}>4</button>
           <button onClick={() => handleClick('5')} className={styles.button}>5</button>
           <button onClick={() => handleClick('6')} className={styles.button}>6</button>
-          <button onClick={() => handleClick('+')} className={styles.operatorButton}>+</button>
+          <button onClick={handleBackspace} className={styles.button}>←</button>
           
           <button onClick={() => handleClick('1')} className={styles.button}>1</button>
           <button onClick={() => handleClick('2')} className={styles.button}>2</button>
